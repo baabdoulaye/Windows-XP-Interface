@@ -5,3 +5,5 @@ un portable ou encore un Media Center.
 Les lettres « XP » proviennent d'experience.
 
 Microsoft a mis fin au support le 8 avril 2014.
+
+[Windows XP Interface demo](windows_xp_interface.mp4)
