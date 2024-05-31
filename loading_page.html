@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windows XP Interface</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="/img/png-transparent-windows-xp-logo-quiz-microsoft-microsoft-orange-logo-computer-wallpaper.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <section id="super_section">
+      <!-- section avec logo windows -->
+      <section>
+        <img src="/img/ancien_logo_windows.png" alt="" />
+        <span style="font-size: 9px; margin-left: -90px; color: grey">TM</span>
+      </section>
+      <div style="font-size: 30px; margin-left: 520px; margin-top: -30px">
+        Microsoft<sup style="font-size: 15px; justify-content: center">®</sup>
+      </div>
+      <div
+        style="
+          font-size: 70px;
+          font-weight: 600;
+          margin-left: 530px;
+          margin-top: -20px;
+        "
+      >
+        Windows<sup style="font-size: 12px">®</sup
+        ><span style="color: rgb(255, 115, 0)"
+          ><sup style="font-weight: 100">xp</sup></span
+        >
+      </div>
+      <!-- section avec barre de chargement windows -->
+
+      <div id="parent_chargement">
+        <div id="enfant_chargement"></div>
+      </div>
+      <!-- section de bas de page -->
+      <section id="section_bas_de_page">
+        <span>Copyright © Microsoft Corporation</span>
+        <span style="font-weight: 900; font-size: 20px">
+          <em> Microsoft® </em></span
+        >
+      </section>
+    </section>
+    <audio id="myAudio" src="/vista.mp3"></audio>
+  </body>
+  <script>
+    const audio = document.getElementById("myAudio");
+
+    // Ajouter un délai de 2 secondes avant de démarrer la lecture de l'audio
+    setTimeout(function () {
+      audio.play();
+    }, 7500); // 2000ms = 2 secondes
+
+    // fonction redirigeant vers l'accueil après 13 secondes
+    setTimeout(function rediriger_vers_page_daccueil() {
+      window.location.href = "/windows_interface.html";
+    }, 13000);
+  </script>
+</html>

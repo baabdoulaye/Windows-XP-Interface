@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("/img/windows_wallpaper.jpg");
+  background-size: cover;
+  font-family: sans-serif;
+}
+#wallpaper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+section img {
+  width: 50px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+section :nth-child(2) {
+  margin-left: 23px;
+  margin-top: 5px;
+}
+
+section :nth-child(4) {
+  margin-left: 11px;
+  margin-top: 5px;
+}
+section :nth-child(6) {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+section :nth-child(8) {
+  margin-left: 35px;
+  margin-top: 5px;
+}
+p {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+#footer_parent {
+  background-image: linear-gradient(#1c46a0, #245dda);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  bottom: 0;
+  position: absolute;
+}
+#logo_footer {
+  width: 34px;
+  height: 20px;
+  position: absolute;
+}
+#div_verte {
+  background-image: radial-gradient(green, rgb(2, 90, 2));
+  width: 100px;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  cursor: pointer;
+  height: 25px;
+  padding-top: 4px;
+}
+#div_verte:hover {
+  background-image: radial-gradient(rgb(0, 180, 0), rgb(2, 90, 2));
+}
+span {
+  text-shadow: black 1px 1px;
+  color: white;
+  padding-left: 34px;
+  font-style: italic;
+}
+#div_bleue_claire {
+  right: 0;
+  background-image: linear-gradient(#769ced, #3aabf7);
+  height: 30px;
+  width: 150px;
+}
+#sound {
+  width: 14px;
+  height: 14px;
+  margin-top: 5px;
+  filter: drop-shadow(2px 3px 2px black);
+}
+#heure {
+  color: white;
+}

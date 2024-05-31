@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+@keyframes disparition_smooth {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#super_section {
+  animation-name: disparition_smooth;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-delay: 7s;
+  animation-fill-mode: forwards; /* Garde les styles du dernier keyframe après la fin de l'animation */
+}
+#section_bas_de_page {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+img {
+  width: 300px;
+  height: 200px;
+  margin-top: 100px;
+  margin-left: 620px;
+}
+#parent_chargement {
+  border: solid white 1px;
+  width: 250px;
+  height: 20px;
+  border-radius: 5px;
+  margin-top: 100px;
+  margin-left: 570px;
+  overflow: hidden;
+}
+#enfant_chargement {
+  width: 40px;
+  height: 20px;
+  background-color: rgb(68, 68, 219);
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  margin-left: -60px;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  background-image: linear-gradient(rgb(68, 68, 219), white, rgb(68, 68, 219));
+  animation-name: chargement;
+}
+@keyframes chargement {
+  0% {
+    margin-left: -60px;
+  }
+  100% {
+    margin-left: 350px;
+  }
+}
